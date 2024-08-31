@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime;
+using System.Reflection.Metadata.Ecma335;
 
 namespace TelephoneLine
 {
@@ -38,15 +39,31 @@ namespace TelephoneLine
 
         public void writeCustomers() 
         {
-            for (int i = 0; i < customerDictionary.Count; i++)
+            List<int> idKeys = customerDictionary.Keys.ToList();
+
+            Console.WriteLine("----- ID KEYS STORED -----\n");
+            for (int i = 0; i < idKeys.Count; i++)
             {
-                Customer client = customerDictionary[100 + i];
-                Console.WriteLine($"Customer name: {client.name}" + $"{client.surname}\n" +
-                                   $"Phone Number: {client.phoneNumber}\n" + $"Spending: {client.spending}\n" +
-                                   $"Goodies brought: {client.goodiesBrought}\n\n");
+                Console.WriteLine(idKeys[i]);
+
+                //Customer client = customerDictionary[100 + i];
+                //Console.WriteLine($"Customer name: {client.name}" + $"{client.surname}\n" +
+                //                   $"Phone Number: {client.phoneNumber}\n" + $"Spending: {client.spending}\n" +
+                //                   $"Goodies brought: {client.goodiesBrought}\n\n");
             }
+            Console.WriteLine("\n----- *************** -----");
         }
 
-   
+        private void InsertClient() 
+        {
+            // HACIENDOSE EN REGISTER CLIENT
+            bool enterACustomer = false;
+            int stages = 0;
+
+            while (!enterACustomer) 
+            {
+
+            }
+        }
     }
 }
