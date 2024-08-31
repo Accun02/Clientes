@@ -10,10 +10,12 @@ namespace TelephoneLine
 {
     public class DictionaryManager
     {
-        private Random random = new Random();
+        private Random rnd = new Random();
+        private Random rndnumber = new Random();
         private string[] names = ["Jeppeto", "Jane", "Juan", "Andres" ];
         private string[] surnames = ["doe", "Dough","ez", "Buyergoodin"];
-
+ 
+        int number;
         private Dictionary<int, Customer> customerDictionary;
         private int initialCustomers = 5;
 
@@ -23,10 +25,18 @@ namespace TelephoneLine
 
             for (int i = 0; i < initialCustomers; i++) 
             {
-                int namesIndex = random.Next(names.Length);
-                int surnamesIndex = random.Next(surnames.Length);
+                string Phonenumber = string.Empty;
+                number = 0;
+                int namesIndex = rnd.Next(names.Length);
+                int surnamesIndex = rnd.Next(surnames.Length);
+     
+                for (int j = 0; j < 8; j++) 
+                {
+                    int number = rndnumber.Next(0, 9);
+                    Phonenumber += (number.ToString());
 
-                Customer client = AddCustomer($"{names[namesIndex]} ", $"{surnames[surnamesIndex]}", $"1111 {+ i}", 100 + i, 1);
+                }
+                Customer client = AddCustomer($"{names[namesIndex]} ", $"{surnames[surnamesIndex]}", $"{Phonenumber}", rndnumber.Next(1,500), rnd.Next (1,20));
                 customerDictionary.Add(100 + i, client);
             }
         }
@@ -46,10 +56,10 @@ namespace TelephoneLine
             {
                 Console.WriteLine(idKeys[i]);
 
-                //Customer client = customerDictionary[100 + i];
-                //Console.WriteLine($"Customer name: {client.name}" + $"{client.surname}\n" +
-                //                   $"Phone Number: {client.phoneNumber}\n" + $"Spending: {client.spending}\n" +
-                //                   $"Goodies brought: {client.goodiesBrought}\n\n");
+                Customer client = customerDictionary[100 + i];
+                Console.WriteLine($"Customer name: {client.name}" + $"{client.surname}\n" +
+                                   $"Phone Number: {client.phoneNumber}\n" + $"Spending: {client.spending}\n" +
+                                  $"Goodies brought: {client.goodiesBrought}\n\n");
             }
             Console.WriteLine("\n----- *************** -----");
         }
