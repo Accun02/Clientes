@@ -7,13 +7,7 @@
         static void Main(string[] args)
         {
             DictionaryManager.Initialize(CustomerDictionary);
-                DictionaryManager.writeCustomers();
-                DictionaryManager.newCustomers();
-           
-
-
+            DictionaryManager.writeCustomers();
         }
-
-      
     }
 }

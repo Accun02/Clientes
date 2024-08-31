@@ -5,21 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime;
 
-
-
 namespace TelephoneLine
 {
-
-   
     public class DictionaryManager
     {
-        Random rnd = new();
-        string[] Names = ["Jeppeto", "Jane", "Juan" ];
-
-        string[] surnames = ["doe", "Dough","ez"];
-        
-        int namesIndex = rnd.Next(names.Length);
-        int surnamesIndex = rnd.Next(surnames.Length);
+        private Random random = new Random();
+        private string[] names = ["Jeppeto", "Jane", "Juan", "Andres" ];
+        private string[] surnames = ["doe", "Dough","ez", "Buyergoodin"];
 
         private Dictionary<int, Customer> customerDictionary;
         private int initialCustomers = 5;
@@ -30,7 +22,10 @@ namespace TelephoneLine
 
             for (int i = 0; i < initialCustomers; i++) 
             {
-                Customer client = AddCustomer($"Customer {i}", " Buyergoodin", $"1111 {+ i}", 100 + i, 1);
+                int namesIndex = random.Next(names.Length);
+                int surnamesIndex = random.Next(surnames.Length);
+
+                Customer client = AddCustomer($"{names[namesIndex]} ", $"{surnames[surnamesIndex]}", $"1111 {+ i}", 100 + i, 1);
                 customerDictionary.Add(100 + i, client);
             }
         }
