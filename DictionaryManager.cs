@@ -3,11 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime;
+
+
 
 namespace TelephoneLine
 {
+
+   
     public class DictionaryManager
     {
+        Random rnd = new();
+        string[] Names = ["Jeppeto", "Jane", "Juan" ];
+
+        string[] surnames = ["doe", "Dough","ez"];
+        
+        int namesIndex = rnd.Next(names.Length);
+        int surnamesIndex = rnd.Next(surnames.Length);
+
         private Dictionary<int, Customer> customerDictionary;
         private int initialCustomers = 5;
 
@@ -17,7 +30,7 @@ namespace TelephoneLine
 
             for (int i = 0; i < initialCustomers; i++) 
             {
-                Customer client = AddCustomer($"Customer {i}", " Buyergoodin", "1111", 100 + i, 1);
+                Customer client = AddCustomer($"Customer {i}", " Buyergoodin", $"1111 {+ i}", 100 + i, 1);
                 customerDictionary.Add(100 + i, client);
             }
         }
@@ -38,5 +51,7 @@ namespace TelephoneLine
                                    $"Goodies brought: {client.goodiesBrought}\n\n");
             }
         }
+
+   
     }
 }

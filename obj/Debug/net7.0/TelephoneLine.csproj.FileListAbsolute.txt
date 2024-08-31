@@ -1,0 +1,15 @@
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\obj\Debug\net7.0\TelephoneLine.csproj.AssemblyReference.cache
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\obj\Debug\net7.0\TelephoneLine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\obj\Debug\net7.0\TelephoneLine.AssemblyInfoInputs.cache
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\obj\Debug\net7.0\TelephoneLine.AssemblyInfo.cs
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\obj\Debug\net7.0\TelephoneLine.csproj.CoreCompileInputs.cache
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\bin\Debug\net7.0\TelephoneLine.exe
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\bin\Debug\net7.0\TelephoneLine.deps.json
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\bin\Debug\net7.0\TelephoneLine.runtimeconfig.json
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\bin\Debug\net7.0\TelephoneLine.dll
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\bin\Debug\net7.0\TelephoneLine.pdb
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\obj\Debug\net7.0\TelephoneLine.dll
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\obj\Debug\net7.0\refint\TelephoneLine.dll
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\obj\Debug\net7.0\TelephoneLine.pdb
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\obj\Debug\net7.0\TelephoneLine.genruntimeconfig.cache
+C:\Users\Facundo\Documents\GitHub\Customers\Clientes\obj\Debug\net7.0\ref\TelephoneLine.dll

@@ -1,32 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\TelephoneLine\\TelephoneLine\\TelephoneLine.csproj": {}
+    "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\TelephoneLine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\TelephoneLine\\TelephoneLine\\TelephoneLine.csproj": {
+    "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\TelephoneLine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\TelephoneLine\\TelephoneLine\\TelephoneLine.csproj",
+        "projectUniqueName": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\TelephoneLine.csproj",
         "projectName": "TelephoneLine",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\TelephoneLine\\TelephoneLine\\TelephoneLine.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\TelephoneLine\\TelephoneLine\\obj\\",
+        "projectPath": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\TelephoneLine.csproj",
+        "packagesPath": "C:\\Users\\Facundo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Facundo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +41,8 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
@@ -55,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
