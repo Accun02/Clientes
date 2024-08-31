@@ -1,0 +1,14 @@
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\bin\Debug\net8.0\TelephoneLine.exe
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\bin\Debug\net8.0\TelephoneLine.deps.json
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\bin\Debug\net8.0\TelephoneLine.runtimeconfig.json
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\bin\Debug\net8.0\TelephoneLine.dll
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\bin\Debug\net8.0\TelephoneLine.pdb
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\obj\Debug\net8.0\TelephoneLine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\obj\Debug\net8.0\TelephoneLine.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\obj\Debug\net8.0\TelephoneLine.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\obj\Debug\net8.0\TelephoneLine.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\obj\Debug\net8.0\TelephoneLine.dll
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\obj\Debug\net8.0\refint\TelephoneLine.dll
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\obj\Debug\net8.0\TelephoneLine.pdb
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\obj\Debug\net8.0\TelephoneLine.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\TelephoneLine\TelephoneLine\obj\Debug\net8.0\ref\TelephoneLine.dll

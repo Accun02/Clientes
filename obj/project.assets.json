@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\facuh\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\facuh\\source\\repos\\Clientes\\Clientes\\Clientes.csproj",
-      "projectName": "Clientes",
-      "projectPath": "C:\\Users\\facuh\\source\\repos\\Clientes\\Clientes\\Clientes.csproj",
-      "packagesPath": "C:\\Users\\facuh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\facuh\\source\\repos\\Clientes\\Clientes\\obj\\",
+      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\TelephoneLine\\TelephoneLine\\TelephoneLine.csproj",
+      "projectName": "TelephoneLine",
+      "projectPath": "C:\\Users\\Usuario\\source\\repos\\TelephoneLine\\TelephoneLine\\TelephoneLine.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\source\\repos\\TelephoneLine\\TelephoneLine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\facuh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

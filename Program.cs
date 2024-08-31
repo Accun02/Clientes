@@ -1,20 +1,15 @@
-﻿namespace Clientes
+﻿namespace TelephoneLine
 {
     internal class Program
     {
-
-       static public Dictionary<int, Clientes> Id;
+        static Dictionary<int, Customer> CustomerDictionary = new Dictionary<int, Customer>();
+        private static DictionaryManager DictionaryManager = new DictionaryManager();
         static void Main(string[] args)
         {
-            
-            void start () 
-            {
-               
-            }
-            void Update()
-            {
-                
-            }
+            DictionaryManager.Initialize(CustomerDictionary);
+
+
+            DictionaryManager.writeCustomers();
         }
     }
 }
