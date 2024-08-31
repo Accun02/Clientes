@@ -19,6 +19,8 @@ namespace TelephoneLine
         private Dictionary<int, Customer> customerDictionary;
         private int initialCustomers = 5;
 
+        private RegisterClient registerClient = new RegisterClient();
+
         public void Initialize (Dictionary<int, Customer> CustomerDictionary) 
         {
             customerDictionary = CustomerDictionary;
@@ -62,6 +64,8 @@ namespace TelephoneLine
                                   $"Goodies brought: {client.goodiesBrought}\n\n");
             }
             Console.WriteLine("\n----- *************** -----");
+
+            registerClient.InsertClient();
         }
 
         private void InsertClient() 
