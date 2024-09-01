@@ -8,10 +8,10 @@ namespace TelephoneLine
 {
     public class RegisterClient
     {
-        Dictionary<int, Customer> registercustomer;
-        public RegisterClient( Dictionary <int,Customer> registercustomer) 
+        Dictionary<int, Customer> registerCustomer;
+        public RegisterClient( Dictionary <int,Customer> registerCustomer) 
         {
-            this.registercustomer = registercustomer;
+            this.registerCustomer = registerCustomer;
         }
         enum Registry 
         {
@@ -23,30 +23,30 @@ namespace TelephoneLine
 
         private Registry registry = new Registry();
 
-
         int id;
         string? name = null;
         string? surname = null;
         string? phoneNumber = null;
-        int? expenses = null;
+        int? spending = null;
         int? purchases = null;
 
-        public void InsertClient()
+        public void InsertClient() // Agregar un cliente nuevo o viejo
         {
             bool enterACustomer = false;
+            Customer? customer1 = null;
 
             while (!enterACustomer)
             {
                 switch (registry)
                 {
-                    case Registry.enterID:
+                    case Registry.enterID: //ingresas documento
 
                         Console.WriteLine("\n1- Write a ID (3 numbers): \n");
 
                         string temp = Console.ReadLine();
 
 
-                        if (!int.TryParse(temp, out int ident))
+                        if (!int.TryParse(temp, out int ident)) // si el doc tiene letras
                         {
                             Console.WriteLine("\nIncorrect values\n");
                             continue;
@@ -56,12 +56,17 @@ namespace TelephoneLine
                             id = ident;
                             
                         }
-                        if (registercustomer[id].
+                        if (registerCustomer.TryGetValue(id, out Customer? customer)) // si la id ya esta registrada
                         {
-                            
+                            Console.WriteLine("obtiene valor");
+                            registry = Registry.enterSpenses;
+                            customer1 = customer;
                         }
-                        
-                        registry = Registry.enterName;
+                        else // si no
+                        {
+                            registry = Registry.enterName;
+                        }
+                       
                         break;
 
                     case Registry.enterName:
@@ -123,12 +128,19 @@ namespace TelephoneLine
                             Console.WriteLine("\nIncorrect values\n");
                             continue;
                         } 
-                        else 
+                        else  if ( customer1 == null) //no existe el cliente
                         {
-                            expenses = result;
+                            spending = result;
                             registry = Registry.enterPurchases;
                         }
-                    break;
+                        else if (customer1 != null) // existe cliente
+                        {
+                            customer1.Spending += result;
+                            registry = Registry.enterPurchases;
+                        }
+                      
+
+                        break;
 
 
                     case Registry.enterPurchases:
@@ -142,19 +154,36 @@ namespace TelephoneLine
                             Console.WriteLine("\nIncorrect values \n");
                             continue;
                         }
-                        else
+                       if (customer1 == null) //  no existe cliente y agraga las compras
                         {
+
                             purchases = resultPurchase;
+                            registry = Registry.endRegister;
+                        }
+                        else if (customer1 != null) // existe cliente y le suma las compras
+                        {
+                            customer1.Purcharse += resultPurchase;
                             registry = Registry.endRegister;
                         }
                     break;
 
                     case Registry.endRegister:
 
-                        Console.WriteLine($"\nID: {id}\n" +
-                                          $"Customer name: {name}" + $" {surname}\n" +
-                                          $"Phone Number: {phoneNumber}\n" + $"Spending: {expenses}\n" +
-                                          $"Goodies brought: {purchases}\n\n");
+                        if (customer1 == null) //datos del nuevo usuario
+                        {
+                            Console.WriteLine($"\nID: {id}\n" +
+                                                                     $"Customer name: {name}" + $" {surname}\n" +
+                                                                     $"Phone Number: {phoneNumber}\n" + $"Spending: {spending}\n" +
+                                                                     $"Goodies brought: {purchases}\n\n");
+                        }
+                       
+                        else if (customer1 != null)  //datos del usuario ya registrado
+                        {
+                            Console.WriteLine($"\nID: {id}\n" +
+                                                                     $"Customer name: {customer1.Name}" + $" {customer1.Surname}\n" +
+                                                                     $"Phone Number: {customer1.PhoneNumber}\n" + $"Spending: {customer1.Spending}\n" +
+                                                                     $"Goodies brought: {customer1.Purcharse}\n\n");
+                        }
 
                         enterACustomer = true;
                         break;

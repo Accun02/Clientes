@@ -8,19 +8,19 @@ namespace TelephoneLine
 {
     public class Customer
     {
-        public string name;
-        public string surname;
-        public string phoneNumber;
-        public float spending;
-        public int goodiesBrought;
+        public string Name;
+        public string Surname;
+        public string PhoneNumber;
+        public float Spending;
+        public int Purcharse;
 
         public Customer(string name, string surname, string phoneNumber, float spending, int goodies) 
         {
-            this.name = name;
-            this.surname = surname;
-            this.phoneNumber = phoneNumber;
-            this.spending = spending;
-            this.goodiesBrought = goodies;
+            this.Name = name;
+            this.Surname = surname;
+            this.PhoneNumber = phoneNumber;
+            this.Spending = spending;
+            this.Purcharse = goodies;
         
         }
     }

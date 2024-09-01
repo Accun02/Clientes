@@ -45,7 +45,7 @@ namespace TelephoneLine
         }
 
 
-        private Customer AddCustomer(string name, string surname, string phoneNumber, float spending, int goodies) 
+        private Customer AddCustomer(string name, string surname, string phoneNumber, float spending, int goodies)  // creador de usuarios
         {
             return new Customer(name, surname, phoneNumber, spending, goodies);
         }
@@ -60,25 +60,13 @@ namespace TelephoneLine
                 Console.WriteLine(idKeys[i]);
 
                 Customer client = customerDictionary[100 + i];
-                Console.WriteLine($"Customer name: {client.name}" + $"{client.surname}\n" +
-                                   $"Phone Number: {client.phoneNumber}\n" + $"Spending: {client.spending}\n" +
-                                  $"Goodies brought: {client.goodiesBrought}\n\n");
+                Console.WriteLine($"Customer name: {client.Name}" + $"{client.Surname}\n" +
+                                   $"Phone Number: {client.PhoneNumber}\n" + $"Spending: {client.Spending}\n" +
+                                  $"Goodies brought: {client.Purcharse}\n\n");
             }
             Console.WriteLine("\n----- *************** -----");
 
             registerClient.InsertClient();
-        }
-
-        private void InsertClient() 
-        {
-            // HACIENDOSE EN REGISTER CLIENT
-            bool enterACustomer = false;
-            int stages = 0;
-
-            while (!enterACustomer) 
-            {
-
-            }
         }
     }
 }
