@@ -8,17 +8,23 @@ namespace TelephoneLine
 {
     public class RegisterClient
     {
+        Dictionary<int, Customer> registercustomer;
+        public RegisterClient( Dictionary <int,Customer> registercustomer) 
+        {
+            this.registercustomer = registercustomer;
+        }
         enum Registry 
         {
             enterID, enterName, enterSurname, 
             enterPhone, enterSpenses, 
-            enterPurchases, existingID, endRegister
+            enterPurchases, existingID, endRegister,
+            OldCostumer
         }
 
         private Registry registry = new Registry();
 
 
-        string? id = null;
+        int id;
         string? name = null;
         string? surname = null;
         string? phoneNumber = null;
@@ -35,14 +41,24 @@ namespace TelephoneLine
                 {
                     case Registry.enterID:
 
-                        Console.WriteLine("\n1- Write a ID (8 numbers): \n");
+                        Console.WriteLine("\n1- Write a ID (3 numbers): \n");
 
-                        id = Console.ReadLine();
+                        string temp = Console.ReadLine();
 
-                        if (id == null || id.Any(char.IsLetter) || id.Length < 7)
+
+                        if (!int.TryParse(temp, out int ident))
                         {
-                            Console.WriteLine("\nInvalid id\n");
+                            Console.WriteLine("\nIncorrect values\n");
                             continue;
+                        }
+                        else
+                        {
+                            id = ident;
+                            
+                        }
+                        if (registercustomer[id].
+                        {
+                            
                         }
                         
                         registry = Registry.enterName;

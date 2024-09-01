@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{08B115F2-6A13-4E30-A548-7485BFD38840}|TelephoneLine.csproj|c:\\users\\facundo\\documents\\github\\customers\\clientes\\telephoneline.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{08B115F2-6A13-4E30-A548-7485BFD38840}|TelephoneLine.csproj|solutionrelative:telephoneline.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{08B115F2-6A13-4E30-A548-7485BFD38840}|TelephoneLine.csproj|c:\\users\\facundo\\documents\\github\\customers\\clientes\\dictionarymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08B115F2-6A13-4E30-A548-7485BFD38840}|TelephoneLine.csproj|solutionrelative:dictionarymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RegisterClient.cs",
               "DocumentMoniker": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\RegisterClient.cs",
               "RelativeDocumentMoniker": "RegisterClient.cs",
@@ -39,11 +43,22 @@
               "ViewState": "AgIAABIAAAAAAAAAAAA5wCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-31T20:23:57.844Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "TelephoneLine",
+              "DocumentMoniker": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\TelephoneLine.csproj",
+              "RelativeDocumentMoniker": "TelephoneLine.csproj",
+              "ToolTip": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\TelephoneLine.csproj",
+              "RelativeToolTip": "TelephoneLine.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-31T21:07:53.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -55,20 +70,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DictionaryManager.cs",
               "DocumentMoniker": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\DictionaryManager.cs",
               "RelativeDocumentMoniker": "DictionaryManager.cs",
-              "ToolTip": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\DictionaryManager.cs*",
-              "RelativeToolTip": "DictionaryManager.cs*",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAACYAAACGAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\DictionaryManager.cs",
+              "RelativeToolTip": "DictionaryManager.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAEoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T20:23:58.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-31T20:23:58.003Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\Facundo\\Documents\\GitHub\\Customers\\Clientes\\Customer.cs",
               "RelativeDocumentMoniker": "Customer.cs",
@@ -76,8 +90,7 @@
               "RelativeToolTip": "Customer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T20:23:58.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-31T20:23:58.006Z"
             },
             {
               "$type": "Bookmark",

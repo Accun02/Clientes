@@ -19,12 +19,13 @@ namespace TelephoneLine
         private Dictionary<int, Customer> customerDictionary;
         private int initialCustomers = 5;
 
-        private RegisterClient registerClient = new RegisterClient();
+        private RegisterClient registerClient;
 
         public void Initialize (Dictionary<int, Customer> CustomerDictionary) 
         {
-            customerDictionary = CustomerDictionary;
 
+            customerDictionary = CustomerDictionary;
+            registerClient = new RegisterClient (customerDictionary);
             for (int i = 0; i < initialCustomers; i++) 
             {
                 string Phonenumber = string.Empty;
