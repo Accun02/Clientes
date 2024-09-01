@@ -29,18 +29,24 @@ namespace TelephoneLine
             for (int i = 0; i < initialCustomers; i++) 
             {
                 string Phonenumber = string.Empty;
+                string Id = string.Empty;
                 number = 0;
                 int namesIndex = rnd.Next(names.Length);
                 int surnamesIndex = rnd.Next(surnames.Length);
+                
      
                 for (int j = 0; j < 8; j++) 
                 {
                     int number = rndnumber.Next(0, 9);
                     Phonenumber += (number.ToString());
 
+                    int idNum = rndnumber.Next(0, 9);
+                    Id += (idNum.ToString());
                 }
+                int.TryParse(Id, out int resultID);
+
                 Customer client = AddCustomer($"{names[namesIndex]} ", $"{surnames[surnamesIndex]}", $"{Phonenumber}", rndnumber.Next(1,500), rnd.Next (1,20));
-                customerDictionary.Add(100 + i, client);
+                customerDictionary.Add(resultID, client);
             }
         }
 
@@ -59,7 +65,7 @@ namespace TelephoneLine
             {
                 Console.WriteLine(idKeys[i]);
 
-                Customer client = customerDictionary[100 + i];
+                Customer client = customerDictionary[idKeys[i]];
                 Console.WriteLine($"Customer name: {client.Name}" + $"{client.Surname}\n" +
                                    $"Phone Number: {client.PhoneNumber}\n" + $"Spending: {client.Spending}\n" +
                                   $"Goodies brought: {client.Purcharse}\n\n");
@@ -67,6 +73,7 @@ namespace TelephoneLine
             Console.WriteLine("\n----- *************** -----");
 
             registerClient.InsertClient();
+            writeCustomers();
         }
     }
 }
