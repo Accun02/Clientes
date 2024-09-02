@@ -26,7 +26,7 @@ namespace TelephoneLine
             string? temp = Console.ReadLine();
 
 
-            if (!int.TryParse(temp, out int ident) || ident < 7) // si el doc tiene letras
+            if (!int.TryParse(temp, out int ident) || temp.Length < 7) // si el doc tiene letras
             {
                 Console.WriteLine("\nIncorrect values\n");
                 return;

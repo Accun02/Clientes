@@ -17,23 +17,14 @@ namespace TelephoneLine
 
         public void RunUpdate() 
         {
-            Console.WriteLine("\n6- Enter the number of purchases: \n");
-
-            string? inputPurchase = Console.ReadLine();
-
-            if (!int.TryParse(inputPurchase, out int resultPurchase))
+            if (_client.Customer == null) //  no se accedio al cliente y agrega las compras
             {
-                Console.WriteLine("\nIncorrect values \n");
-                return;
-            }
-            if (!_client.CustomerAccesed) //  no se accedio al cliente y agrega las compras
-            {
-                _client.Purchases = resultPurchase;
+                _client.Purchases += 1;
                 _client.ChangeStep(_client.StepEndRegister);
             }
-            else if (_client.CustomerAccesed) // se accedio a un cliente y le suma las compras
+            else if (_client.Customer != null) // se accedio a un cliente y le suma las compras
             {
-                _client.Customer.Purcharse += resultPurchase;
+                _client.Customer.Purcharse += 1;
                 _client.ChangeStep(_client.StepEndRegister);
             }
         }

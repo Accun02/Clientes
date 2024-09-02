@@ -12,11 +12,11 @@ namespace TelephoneLine
     {
         private Random rnd = new Random();
         private Random rndnumber = new Random();
-        private string[] names = ["Jeppeto", "Jane", "Juan", "Andres" ];
-        private string[] surnames = ["doe", "Dough","ez", "Buyergoodin"];
+        private string[] names = ["Geto", "Jane", "Juan", "Andres", "Barrakas" ];
+        private string[] surnames = ["Dou", "Invenias","Ez", "Buyergoodin"];
  
         int number;
-        private Dictionary<int, Customer> customerDictionary;
+        private Dictionary<int, Customer>? customerDictionary;
         private int initialCustomers = 5;
 
         private RegisterClient registerClient;

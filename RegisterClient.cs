@@ -62,7 +62,7 @@ namespace TelephoneLine
         public string? Surname = null;
         public string? PhoneNumber = null;
         public float Spending;
-        public int Purchases;
+        public int Purchases = 0;
 
         public void ChangeStep(IRegistrySteps newStep) 
         {

@@ -22,7 +22,7 @@ namespace TelephoneLine
 
             _client.PhoneNumber = Console.ReadLine();
 
-            if (_client.PhoneNumber == null || _client.PhoneNumber.Any(char.IsLetter))
+            if (_client.PhoneNumber == "" || _client.PhoneNumber.Any(char.IsLetter))
             {
                 Console.WriteLine("\nThere must be a phone number somewhere. Go get it.\n");
                 return;

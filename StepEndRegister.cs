@@ -37,7 +37,7 @@ namespace TelephoneLine
 
             if(_client.Customer == null) 
             {
-                _client.Customer = new Customer(_client.Name, _client.Surname, _client.PhoneNumber, _client.Spending, _client.Purchases);
+                _client.Customer = new Customer(_client.Name + " ", _client.Surname, _client.PhoneNumber, _client.Spending, _client.Purchases);
             }
             _client.RegisterCustomer.TryAdd(_client.Id, _client.Customer);
         }
